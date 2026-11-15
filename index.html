@@ -1,0 +1,510 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SREE AVP JEWELLERS POKKISHAM - Discover timeless gold, silver and diamond jewellery.">
+  <title>SREE AVP JEWELLERS | POKKISHAM</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Announcement -->
+  <div class="announcement">
+    <p>✦ Timeless Elegance, Crafted With Love ✦</p>
+  </div>
+
+  <!-- Gold Rate Ticker -->
+  <div class="gold-ticker">
+    <div class="container-fluid">
+      <div class="ticker-content">
+        <span>DEMO GOLD RATES</span>
+        <span>24K: ₹13,000/g</span>
+        <span>22K: ₹11,917/g</span>
+        <span>18K: ₹9,750/g</span>
+        <span>14K: ₹7,583/g</span>
+        <span>Silver: ₹180/g</span>
+        <span class="demo-label">SAMPLE RATES – NOT LIVE MARKET PRICES</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <div class="header-main">
+
+        <button class="mobile-menu-btn" id="menuBtn" aria-label="Open menu">
+          <i class="bi bi-list"></i>
+        </button>
+
+        
+<a href="#home" class="brand">
+    <img
+        src="img/avp.png"
+        alt="SREE AVP JEWELLERS POKKISHAM Logo"
+        class="brand-logo"
+    >
+</a>
+
+
+        <div class="header-search">
+          <input type="search" id="searchInput" placeholder="Search jewellery, collections...">
+          <button id="searchBtn" aria-label="Search"><i class="bi bi-search"></i></button>
+        </div>
+
+        <div class="header-actions">
+          <button class="icon-btn" data-page="login" title="Account">
+            <i class="bi bi-person"></i>
+          </button>
+          <button class="icon-btn" data-page="wishlist" title="Wishlist">
+            <i class="bi bi-heart"></i>
+            <span class="count" id="wishlistCount">0</span>
+          </button>
+          <button class="icon-btn" data-page="cart" title="Shopping cart">
+            <i class="bi bi-bag"></i>
+            <span class="count" id="cartCount">0</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Navigation -->
+      <nav class="navigation" id="navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#shop" class="nav-link">All Jewellery</a>
+        <a href="#shop" class="nav-link" data-category="Gold">Gold</a>
+        <a href="#shop" class="nav-link" data-category="Diamond">Diamond</a>
+        <a href="#shop" class="nav-link" data-category="Silver">Silver</a>
+        <a href="#shop" class="nav-link" data-category="Bangles">Bangles</a>
+        <a href="#new-arrivals" class="nav-link">New Arrivals</a>
+        <a href="#best-sellers" class="nav-link">Best Sellers</a>
+        <a href="#offers" class="nav-link offer-link">Offers</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HOME PAGE -->
+    <section id="home" class="page-section">
+
+      <!-- Hero -->
+      <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <span class="hero-tag">THE ART OF FINE JEWELLERY</span>
+          <h1>Every Jewel Has<br>A <span>Story To Tell.</span></h1>
+          <p>Discover exquisite craftsmanship and timeless jewellery designed to celebrate your precious moments.</p>
+          <div class="hero-buttons">
+            <a href="#shop" class="btn-gold">EXPLORE COLLECTION <i class="bi bi-arrow-right"></i></a>
+            <a href="#about" class="btn-outline-light">OUR STORY</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust strip -->
+      <section class="trust-section">
+        <div class="container">
+          <div class="row g-3">
+            <div class="col-6 col-lg-3 trust-item">
+              <i class="bi bi-patch-check"></i>
+              <span>Quality Craftsmanship</span>
+            </div>
+            <div class="col-6 col-lg-3 trust-item">
+              <i class="bi bi-gem"></i>
+              <span>Elegant Designs</span>
+            </div>
+            <div class="col-6 col-lg-3 trust-item">
+              <i class="bi bi-shield-check"></i>
+              <span>Trusted Service</span>
+            </div>
+            <div class="col-6 col-lg-3 trust-item">
+              <i class="bi bi-heart"></i>
+              <span>Made For Moments</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories -->
+      <section class="section-padding">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">EXPLORE OUR WORLD</span>
+            <h2>Shop By <span>Category</span></h2>
+            <p>Find the perfect jewellery for every occasion.</p>
+          </div>
+
+          <div class="row g-4 category-grid">
+            <div class="col-6 col-lg-3">
+              <a href="#shop" class="category-card" data-category="Gold">
+                <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600" alt="Gold jewellery">
+                <div><h3>Gold</h3><span>Explore Collection <i class="bi bi-arrow-right"></i></span></div>
+              </a>
+            </div>
+            <div class="col-6 col-lg-3">
+              <a href="#shop" class="category-card" data-category="Diamond">
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600" alt="Diamond jewellery">
+                <div><h3>Diamond</h3><span>Explore Collection <i class="bi bi-arrow-right"></i></span></div>
+              </a>
+            </div>
+            <div class="col-6 col-lg-3">
+              <a href="#shop" class="category-card" data-category="Silver">
+                <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600" alt="Silver jewellery">
+                <div><h3>Silver</h3><span>Explore Collection <i class="bi bi-arrow-right"></i></span></div>
+              </a>
+            </div>
+            <div class="col-6 col-lg-3">
+              <a href="#shop" class="category-card" data-category="Bangles">
+                <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=600" alt="Bangles">
+                <div><h3>Bangles</h3><span>Explore Collection <i class="bi bi-arrow-right"></i></span></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- New Arrivals -->
+      <section class="section-padding light-bg" id="new-arrivals">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">JUST ARRIVED</span>
+            <h2>New <span>Arrivals</span></h2>
+            <p>Discover the latest additions to our collection.</p>
+          </div>
+          <div class="row g-4" id="newArrivalProducts"></div>
+        </div>
+      </section>
+
+      <!-- Best Sellers -->
+      <section class="section-padding" id="best-sellers">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">CUSTOMER FAVOURITES</span>
+            <h2>Best <span>Sellers</span></h2>
+            <p>Our most loved jewellery pieces.</p>
+          </div>
+          <div class="row g-4" id="bestSellerProducts"></div>
+        </div>
+      </section>
+
+      <!-- Offers -->
+      <section class="offer-banner" id="offers">
+        <div class="container">
+          <div class="offer-content">
+            <span>EXCLUSIVE COLLECTION</span>
+            <h2>Celebrate Every<br>Moment With Elegance</h2>
+            <p>Explore our beautiful jewellery collections.</p>
+            <a href="#shop" class="btn-gold">SHOP COLLECTION</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section-padding light-bg" id="testimonials">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">HAPPY CUSTOMERS</span>
+            <h2>Words Of <span>Love</span></h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Beautiful designs and a lovely jewellery collection. A wonderful shopping experience."</p>
+                <h5>Priya R.</h5>
+                <small>Sample customer review</small>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"The traditional designs are elegant and perfect for special occasions."</p>
+                <h5>Divya S.</h5>
+                <small>Sample customer review</small>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Loved the collection and the attention to detail. Looking forward to visiting again."</p>
+                <h5>Kavya M.</h5>
+                <small>Sample customer review</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- SHOP PAGE -->
+    <section id="shop" class="page-section hidden-page">
+      <div class="container section-padding">
+        <div class="page-heading">
+          <span class="eyebrow">OUR COLLECTION</span>
+          <h1>Discover <span>Jewellery</span></h1>
+          <p>Explore jewellery made for your special moments.</p>
+        </div>
+
+        <div class="shop-toolbar">
+          <div>
+            <strong id="productTotal">0 Products</strong>
+            <span id="activeCategory">All Collections</span>
+          </div>
+          <select id="sortProducts" aria-label="Sort products">
+            <option value="featured">Featured</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+            <option value="new">Newest First</option>
+          </select>
+        </div>
+
+        <div class="row g-4">
+          <aside class="col-lg-3">
+            <div class="filter-box">
+              <h3>Filters <button id="clearFilters">Clear All</button></h3>
+              <h5>Category</h5>
+              <div class="filter-options" id="categoryFilters">
+                <label><input type="checkbox" value="Gold"> Gold</label>
+                <label><input type="checkbox" value="Diamond"> Diamond</label>
+                <label><input type="checkbox" value="Silver"> Silver</label>
+                <label><input type="checkbox" value="Bangles"> Bangles</label>
+                <label><input type="checkbox" value="Rings"> Rings</label>
+                <label><input type="checkbox" value="Necklaces"> Necklaces</label>
+              </div>
+              <hr>
+              <h5>Price Range</h5>
+              <input type="range" min="0" max="100000" step="1000" value="100000" id="priceFilter">
+              <p>Up to <strong id="priceValue">₹1,00,000</strong></p>
+            </div>
+          </aside>
+
+          <div class="col-lg-9">
+            <div class="row g-4" id="shopProducts"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT DETAIL PAGE -->
+    <section id="product-detail" class="page-section hidden-page">
+      <div class="container section-padding">
+        <div id="productDetailContent"></div>
+      </div>
+    </section>
+
+    <!-- WISHLIST PAGE -->
+    <section id="wishlist" class="page-section hidden-page">
+      <div class="container section-padding">
+        <div class="page-heading">
+          <span class="eyebrow">YOUR FAVOURITES</span>
+          <h1>My <span>Wishlist</span></h1>
+          <p>Jewellery you love, saved in one place.</p>
+        </div>
+        <div class="row g-4" id="wishlistProducts"></div>
+      </div>
+    </section>
+
+    <!-- CART PAGE -->
+    <section id="cart" class="page-section hidden-page">
+      <div class="container section-padding">
+        <div class="page-heading">
+          <span class="eyebrow">YOUR SHOPPING BAG</span>
+          <h1>Shopping <span>Cart</span></h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <div id="cartItems"></div>
+          </div>
+          <div class="col-lg-4">
+            <div class="cart-summary">
+              <h3>Order Summary</h3>
+              <div class="summary-row"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div>
+              <div class="summary-row"><span>Delivery</span><strong>Free</strong></div>
+              <hr>
+              <div class="summary-row total-row"><span>Total</span><strong id="cartTotal">₹0</strong></div>
+              <p class="small-note">Demo checkout only. No payment will be collected.</p>
+              <button class="btn-gold w-100" id="checkoutBtn">PROCEED TO CHECKOUT</button>
+              <a href="#shop" class="continue-shopping">Continue Shopping</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGIN PAGE -->
+    <section id="login" class="page-section hidden-page">
+      <div class="container section-padding">
+        <div class="auth-card">
+          <div class="auth-icon"><i class="bi bi-person-circle"></i></div>
+          <span class="eyebrow">WELCOME BACK</span>
+          <h2>My <span>Account</span></h2>
+          <div class="auth-tabs">
+            <button class="auth-tab active" data-auth="loginForm">Login</button>
+            <button class="auth-tab" data-auth="registerForm">Register</button>
+          </div>
+          <form id="loginForm" class="auth-form">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password" required>
+            <button class="btn-gold w-100">LOGIN</button>
+          </form>
+          <form id="registerForm" class="auth-form hidden-page">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+            <label>Password</label>
+            <input type="password" minlength="6" placeholder="Create password" required>
+            <button class="btn-gold w-100">CREATE ACCOUNT</button>
+          </form>
+          <p class="small-note">Demo authentication UI. No real account is created.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT PAGE -->
+    <section id="about" class="page-section hidden-page">
+      <div class="container section-padding">
+        <div class="page-heading">
+          <span class="eyebrow">OUR HERITAGE</span>
+          <h1>About <span>Our Brand</span></h1>
+        </div>
+        <div class="row align-items-center g-5">
+          <div class="col-md-6">
+            <img class="about-image" src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=900" alt="Traditional jewellery">
+          </div>
+          <div class="col-md-6">
+            <h2>Jewellery That Celebrates <span>Life</span></h2>
+            <p>SREE AVP JEWELLERS POKKISHAM brings together the beauty of traditional inspiration and contemporary elegance.</p>
+            <p>Our demo store showcases a curated selection of gold, silver, diamond and traditional jewellery designs.</p>
+            <a href="#shop" class="btn-gold">EXPLORE COLLECTION</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT PAGE -->
+    <section id="contact" class="page-section hidden-page">
+      <div class="container section-padding">
+        <div class="page-heading">
+          <span class="eyebrow">WE ARE HERE FOR YOU</span>
+          <h1>Get In <span>Touch</span></h1>
+          <p>Have a question? Send us an enquiry.</p>
+        </div>
+        <div class="row g-5">
+          <div class="col-md-5">
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <p><i class="bi bi-geo-alt"></i> Store address to be updated</p>
+              <p><i class="bi bi-telephone"></i> Phone number to be updated</p>
+              <p><i class="bi bi-envelope"></i> Email address to be updated</p>
+              <p><i class="bi bi-clock"></i> Business hours to be updated</p>
+              <a href="#" id="whatsappLink" class="whatsapp-btn"><i class="bi bi-whatsapp"></i> WhatsApp Enquiry</a>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <form class="contact-form" id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label>Your Name</label>
+                  <input type="text" placeholder="Full name" required>
+                </div>
+                <div class="col-md-6">
+                  <label>Email Address</label>
+                  <input type="email" placeholder="Email address" required>
+                </div>
+                <div class="col-12">
+                  <label>Phone Number</label>
+                  <input type="tel" placeholder="Phone number" required>
+                </div>
+                <div class="col-12">
+                  <label>Message</label>
+                  <textarea rows="5" placeholder="How can we help you?" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button class="btn-gold">SEND ENQUIRY</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          
+<a href="#home" class="brand footer-brand">
+    <img
+        src="img/avp.png"
+        alt="SREE AVP JEWELLERS POKKISHAM Logo"
+        class="footer-logo"
+    >
+</a>
+
+          <p>Celebrating life's precious moments with timeless jewellery and elegant craftsmanship.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Quick Links</h5>
+          <a href="#home">Home</a>
+          <a href="#shop">Shop</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5>Collections</h5>
+          <a href="#shop" data-category="Gold">Gold Jewellery</a>
+          <a href="#shop" data-category="Diamond">Diamond Jewellery</a>
+          <a href="#shop" data-category="Silver">Silver Jewellery</a>
+          <a href="#shop" data-category="Bangles">Bangles</a>
+        </div>
+        <div class="col-lg-3">
+          <h5>Stay Connected</h5>
+          <p>Follow us for latest collections and updates.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SREE AVP JEWELLERS POKKISHAM. Demo website. All rights reserved.</p>
+        <span>Crafted with <i class="bi bi-heart-fill"></i></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast-message" id="toastMessage" role="status" aria-live="polite"></div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
